@@ -1,4 +1,4 @@
-PS C:\lesson\tera\git> mkdir git_challenge 
+PS C:\lesson\tera\git> mkdir git_challenge                      
 
 
     ディレクトリ: C:\lesson\tera\git
@@ -6,21 +6,23 @@ PS C:\lesson\tera\git> mkdir git_challenge
 
 Mode                 LastWriteTime         Length Name                                                       
 ----                 -------------         ------ ----                                                       
-d-----        2026/11/14      0:51                git_challenge                                              
+d-----        2026/11/14     14:00                git_challenge                                              
 
 
 PS C:\lesson\tera\git> cd git_challenge   
-PS C:\lesson\tera\git\git_challenge> git init 
+PS C:\lesson\tera\git\git_challenge> git init
 Initialized empty Git repository in C:/lesson/tera/git/git_challenge/.git/
+PS C:\lesson\tera\git\git_challenge> echo "Hello, world!" >> hello_world.txt
 PS C:\lesson\tera\git\git_challenge> git add .
 PS C:\lesson\tera\git\git_challenge> git commit -m "1回目のコミット"
-[main (root-commit) 5fe5346] 1回目のコミット
- 1 file changed, 1 insertion(+)
+[main (root-commit) 1e74e38] 1回目のコミット
+ 1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 hello_world.txt
-PS C:\lesson\tera\git\git_challenge> git add hello_world.txt        
-PS C:\lesson\tera\git\git_challenge> git commit -m "2回目のコミット"
-[main c147012] 2回目のコミット
- 1 file changed, 2 insertions(+), 1 deletion(-)
-PS C:\lesson\tera\git\git_challenge> git log --oneline
-c147012 (HEAD -> main) 2回目のコミット
-5fe5346 1回目のコミット
+PS C:\lesson\tera\git\git_challenge> echo "こんにちは、世界！" >> hello_world.txt
+PS C:\lesson\tera\git\git_challenge> git add .
+PS C:\lesson\tera\git\git_challenge> git commit -m "2回目のコミット"             
+[main f6be7ac] 2回目のコミット
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\lesson\tera\git\git_challenge> git log --oneline                           
+f6be7ac (HEAD -> main) 2回目のコミット
+1e74e38 1回目のコミット
